@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run" name="Project 1 - Square Lists">
+
+	<target name="run" depends="compile">
+		<java classname="driver.Proj1Test">
+			<classpath path="test" />
+		</java>
+	</target>
+	
+	<target name="compile" depends="clean">
+		<javac includeantruntime="false" srcdir="./src" destdir="test" />
+	</target>
+	
+	<target name="clean">
+		<delete dir="${driver.dir}" />
+		<delete dir="${squarelist.dir}" />
+	</target>
+	
+</project>
