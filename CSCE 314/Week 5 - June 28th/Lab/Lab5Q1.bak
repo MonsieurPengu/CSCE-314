@@ -1,0 +1,17 @@
+#lang racket
+; (datum world-tree1)
+(display (datum world-tree1))
+;WORLD
+
+; (datum (car (children world-tree)))
+(display (datum (car (children world-tree1))))
+;ITALY
+
+; (datum (car (children (cadr (children world-tree)))))
+(display (datum (car (children (cadr (children world-tree1))))))
+;CALIFORNIA
+
+(display
+ (datum (car (children (car (children (cadr (children world-tree1))))))))
+; (datum (car (children (car (children (cadr (children world-tree)))))))
+; Berkeley

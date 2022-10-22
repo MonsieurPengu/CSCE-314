@@ -1,0 +1,10 @@
+#lang racket
+children (car (children (cadr (children world-tree))))
+;returns the children of california
+; berkley san_francisco gilroy
+car (children (car (children (cadr (children world-tree)))))
+; returns the first child of california
+;  Berkley
+datum (car (children (car (children (cadr (children world-tree))))))
+; returns the first child of california without any of the children of berkley
+;  Berkley

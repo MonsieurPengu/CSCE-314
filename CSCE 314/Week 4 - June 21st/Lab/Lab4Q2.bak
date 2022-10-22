@@ -1,0 +1,22 @@
+#lang racket
+(define (trafficLight color)
+
+  (cond
+
+    ((trafficLight "green") (display "It's green\n"))
+
+    ((trafficLight "yellow") (display "It's yellow!\n"))
+
+    ((trafficLight "red") (display "stop\n"))
+
+    (else (display "wrong color\n"))
+
+    )
+
+  )
+
+ 
+
+(trafficLight "blue")
+
+(trafficLight "green")
